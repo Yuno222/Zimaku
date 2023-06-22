@@ -11,7 +11,7 @@ jobs:
       - run: npx playwright install firefox
       - run:
           name: Run test
-          command: npx run test
+          command: npx playwright test
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
