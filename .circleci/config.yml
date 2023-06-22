@@ -8,12 +8,10 @@ jobs:
       - checkout
       - run: npm i -D @playwright/test
       - run: npx playwright install
-      - run: npx playwright install chrome
+      - run: npx playwright install firefox
       - run:
           name: Run test
-          command: PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml npx playwright test --reporter=junit --project=chromium
-      - store_test_results:
-          path: results.xml
+          command: npx run test
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
