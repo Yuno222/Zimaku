@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: ゆずるねを宣言する
 on: push
 jobs:
   test:
@@ -11,7 +11,7 @@ jobs:
         node-version: 16
     - name: Install dependencies
       run: npm ci
-    - name: Install Playwright Browsers
+    - name: Install Playwright Browsers --chrome
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
