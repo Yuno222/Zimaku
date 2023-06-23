@@ -11,5 +11,5 @@ test('ゆずるね宣言する', async ({ page }) => {
   await page1.getByRole('button', { name: 'ログイン' }).click();
   // await page1.locator("#MineoSwitchSubmit").click();
   // await page1.getByRole('button', { name: '節約ON' }).click();
-  //await page1.getByRole('button', { name: 'ゆずるね。宣言待ち' }).click();
+  await page1.getByRole('button', { name: 'ゆずるね。宣言待ち' }).click();
 });
