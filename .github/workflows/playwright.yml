@@ -1,8 +1,8 @@
 name: ゆずるねを宣言する
 on:
   schedule:
-    -cron: '20 14 * * *'
-    
+    - cron: '21 14 * * *'
+
 jobs:
   test:
     timeout-minutes: 60
