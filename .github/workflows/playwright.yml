@@ -1,5 +1,6 @@
 name: ゆずるねを宣言する
 on:
+  push:
   schedule:
     - cron: '0 15 * * *'
 
