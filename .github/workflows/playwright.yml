@@ -1,5 +1,9 @@
 name: ゆずるねを宣言する
-on: push
+on: [
+  push,
+  schedule:
+    -cron: '20 14 * * *'
+]
 jobs:
   test:
     timeout-minutes: 60
