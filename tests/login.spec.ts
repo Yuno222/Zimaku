@@ -9,6 +9,8 @@ test('ゆずるね宣言する', async ({ page }) => {
   await page1.getByRole('button', { name: '次へ' }).click();
   await page1.getByPlaceholder('eoIDパスワード').fill('pikapika29');
   await page1.getByRole('button', { name: 'ログイン' }).click();
+  
+  await page1.waitForURL("https://my.mineo.jp/**")
   await page1.context().storageState({path: "login_state.json"})
   // await page1.locator("#MineoSwitchSubmit").click();
   // await page1.getByRole('button', { name: '節約ON' }).click();
