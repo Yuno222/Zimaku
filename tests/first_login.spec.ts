@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('ログインする', async ({ page }) => {
+test('初回ログイン', async ({ page }) => {
   await page.goto('https://mineo.jp/');
   const page1Promise = page.waitForEvent('popup');
   await page.locator('#default-header').getByRole('link', { name: 'マイページ' }).click();
